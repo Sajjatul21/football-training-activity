@@ -13,6 +13,28 @@ const Home = () => {
             .then(data => setPlayers(data));
 
     }, []);
+
+    const [time, setTime] = useState(0);
+  
+    const handleBreakTime = (e) => {
+        let buttonValue = e.target.textContent;
+        if (buttonValue === "10m") {
+            buttonValue = 10;
+        }
+        else if (buttonValue === "20m") {
+            buttonValue = 20;
+        }
+        else if (buttonValue === "30m") {
+            buttonValue = 30;
+        }
+        else {
+            buttonValue = 40;
+        }
+        setTime(buttonValue);
+    };
+
+
+
     return (
 
         <div className="cart-container">
@@ -34,9 +56,8 @@ const Home = () => {
 
             <div className='m-5'>
                 <Mydetails></Mydetails>
-                <Break></Break>
-                <Exercise></Exercise>
-
+                <Break handleBreakTime={handleBreakTime}></Break>
+                <Exercise time={time}></Exercise>
             </div>
         </div>
 
