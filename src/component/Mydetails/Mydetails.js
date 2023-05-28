@@ -19,7 +19,7 @@ const Mydetails = () => {
 
             {/* -------------height and weight------------------ */}
 
-            <div className='height-weight-color flex justify-around mt-10 p-5 rounded'>
+            <div className='height-weight-color flex justify-around mt-10 p-4 rounded-xl'>
                 <div>
                     <div className='flex items-end'>
                         <h1 className='text-2xl font-bold '>75</h1>

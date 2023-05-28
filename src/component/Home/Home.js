@@ -3,6 +3,7 @@ import "./Home.css";
 import Header from '../Header/Header';
 import Player from '../Player/Player';
 import Mydetails from '../Mydetails/Mydetails';
+import Break from '../Break/Break';
 const Home = () => {
     const [players, setPlayers] = useState([]);
     useEffect(() => {
@@ -14,7 +15,7 @@ const Home = () => {
     return (
 
         <div className="cart-container">
-            <div className='cart-bg'> 
+            <div className='cart-bg'>
                 <Header></Header>
 
                 {/*-------------- players--------------- */}
@@ -32,7 +33,8 @@ const Home = () => {
 
             <div className='m-5'>
                 <Mydetails></Mydetails>
-                
+                <Break></Break>
+
             </div>
         </div>
 
