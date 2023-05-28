@@ -2,7 +2,7 @@ import React from 'react';
 
 const Break = () => {
     return (
-        <div >
+        <div className='mb-10'>
             <h1 className='text-xl font-semibold my-6'>Add A Break</h1>
 
             <div className='height-weight-color flex justify-between p-5 rounded-xl'>

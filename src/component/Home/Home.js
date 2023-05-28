@@ -4,6 +4,7 @@ import Header from '../Header/Header';
 import Player from '../Player/Player';
 import Mydetails from '../Mydetails/Mydetails';
 import Break from '../Break/Break';
+import Exercise from '../Exercise/Exercise';
 const Home = () => {
     const [players, setPlayers] = useState([]);
     useEffect(() => {
@@ -34,6 +35,7 @@ const Home = () => {
             <div className='m-5'>
                 <Mydetails></Mydetails>
                 <Break></Break>
+                <Exercise></Exercise>
 
             </div>
         </div>
