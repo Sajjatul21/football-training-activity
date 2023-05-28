@@ -1,0 +1,50 @@
+[
+  {
+    "_id": "647172e96bf437a8023670fb",
+    "picture": "https://img.olympicchannel.com/images/image/private/t_s_pog_staticContent_hero_xl_2x/f_auto/primary/jys8fnrljblf0g3mibmq",
+    "age": "15-30",
+    "name": "Dribbling",
+    "about": "Dribbling is a fundamental skill in football that allows players to move the ball past defenders and create scoring opportunities. There are many different types of dribbling, each with its own advantages and disadvantages.\r\n",
+    "time": 22
+  },
+  {
+    "_id": "647172e96bf437a8023670Db",
+    "picture": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_300,h_300/global/770483/04/mod02/fnd/GBR/fmt/png/Manchester-City-Football-Shorts",
+    "age": "15-30",
+    "name": "Power Short",
+    "about": "Use your run-up to generate momentum. As you approach the ball, take a few long strides to build up speed. This will give you more power behind your shot.\r\n",
+    "time": 15
+  },
+  {
+    "_id": "647172e96bf437a8023687Db",
+    "picture": "https://c8.alamy.com/comp/2K5221Y/soccer-football-and-sports-girl-training-on-field-preparing-for-match-game-or-competition-on-outdoors-grass-pitch-health-fitness-and-kid-kick-ball-2K5221Y.jpg",
+    "age": "15-30",
+    "name": "Carve Short",
+    "about": "A football carve is a type of shot that curves in the air. It is a difficult shot to master, but it can be very effective if done correctly.\r\n",
+    "time": 33
+  },
+  {
+    "_id": "647172e976ed33fcc3629108",
+    "picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiqmCvCcmqdFVL76ktChowVz34yO5S7wyeHoi2kt8b_oUDPeccpRhsp31KC7KoCsJRLzU&usqp=CAU",
+    "age": "15-30",
+    "name": "Football contro",
+    "about": "Football control is the ability of a player to receive and keep possession of the ball in a variety of situations. It is a fundamental skill that all players need to develop in order to be successful at the game. There are many different techniques that can be used to control the ball, and the best technique for a particular situation will vary depending on the player's individual skills and the circumstances of the game.\r\n",
+    "time": 40
+  },
+  {
+    "_id": "647172e916c04928a410b173",
+    "picture": "https://newsimg.bbc.co.uk/media/images/38103000/gif/_38103615_att_head_f3.gif",
+    "age": "15-30",
+    "name": "Headding",
+    "about": "A header in football is a technique used to control the ball using the head to pass, shoot, or clear. This can be done from a standing, jumping, or diving position. Heading is a common technique and is used by players in practically every match.\r\n",
+    "time": 40
+  },
+  {
+    "_id": "647172e916c02128a410b173",
+    "picture": "https://newsimg.bbc.co.uk/media/images/38103000/gif/_38103889_side_pass_f5.gif",
+    "age": "15-30",
+    "name": "Passing",
+    "about": "Passing is one of the most important skills in football. It allows players to move the ball around the field and create scoring opportunities. There are many different types of passes, and each one has its own purpose.\r\n",
+    "time": 29
+  }
+]
