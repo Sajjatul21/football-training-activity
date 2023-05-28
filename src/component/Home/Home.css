@@ -1,4 +1,10 @@
 .cart-container {
     display: grid;
-    grid-template-columns: 5fr 1fr;
+    grid-template-columns: 3fr 1fr;
+}
+
+.cart-bg {
+    /* background-color: #eeeae6; */
+    background-color: #f5f2ef;
+
 }

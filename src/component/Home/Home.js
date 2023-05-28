@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import "./Home.css";
 import Header from '../Header/Header';
 import Player from '../Player/Player';
+import Mydetails from '../Mydetails/Mydetails';
 const Home = () => {
     const [players, setPlayers] = useState([]);
     useEffect(() => {
@@ -13,12 +14,12 @@ const Home = () => {
     return (
 
         <div className="cart-container">
-            <div>
+            <div className='cart-bg'> 
                 <Header></Header>
 
                 {/*-------------- players--------------- */}
 
-                {<div className='grid grid-cols-3 gap-7 ml-32 mr-28'>
+                {<div className='grid grid-cols-3 gap-5 ml-32 mr-20'>
                     {
                         players.map(player => <Player player={player} key={player._id}></Player>)
                     }
@@ -29,8 +30,9 @@ const Home = () => {
 
             {/*---------------------- cart details------------------ */}
 
-            <div className='bg-cyan-600'>
-                <h3>I am from details. </h3>
+            <div className='m-5'>
+                <Mydetails></Mydetails>
+                
             </div>
         </div>
 

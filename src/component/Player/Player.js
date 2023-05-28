@@ -5,7 +5,7 @@ const Player = ({ player }) => {
     // console.log(player);
     return (
         <div>
-            <div className="player-cart card w-full bg-base-100 shadow-xl ">
+            <div className="player-cart card w-full bg-base-100 shadow-md ">
                 <figure><img className='w-full h-52' src={picture} alt="Shoes" /></figure>
                 <div className="p-4  ">
                     <h2 className="card-title pb-3">{name}</h2>
