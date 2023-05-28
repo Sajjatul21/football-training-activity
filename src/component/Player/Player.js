@@ -1,6 +1,6 @@
 import React from 'react';
 import './Player.css';
-const Player = ({ player }) => {
+const Player = ({ player, handlePlayer }) => {
     const { picture, age, name, time, about } = player;
 
     return (
@@ -13,7 +13,7 @@ const Player = ({ player }) => {
                     <h4 className='text-md font-semibold'>For Age : <span className='font-bold'>{age}</span></h4>
                     <h4 className='text-md font-semibold mb-4'>Time requeresd : <span className='font-bold'>{time}min</span></h4>
                     <div className="card-actions justify-center mb-3">
-                        <button className="btn bg-cyan-600 px-10">Buy Now</button>
+                        <button onClick={() => handlePlayer(player)} className="btn bg-cyan-600 px-10">Buy Now</button>
                     </div>
                 </div>
             </div>

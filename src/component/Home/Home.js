@@ -7,6 +7,8 @@ import Break from '../Break/Break';
 import Exercise from '../Exercise/Exercise';
 const Home = () => {
     const [players, setPlayers] = useState([]);
+    const [breakTime, setBreakTime] = useState(0);
+    const [practiceTimes, setPracticeTimes] = useState(0);
     useEffect(() => {
         fetch('fackdb.json')
             .then(res => res.json())
@@ -14,8 +16,15 @@ const Home = () => {
 
     }, []);
 
-    const [time, setTime] = useState(0);
-  
+    const handlePlayer = ({ time }) => {
+        setPracticeTimes(time + practiceTimes);
+
+    };
+    console.log(practiceTimes);
+
+
+
+
     const handleBreakTime = (e) => {
         let buttonValue = e.target.textContent;
         if (buttonValue === "10m") {
@@ -30,7 +39,7 @@ const Home = () => {
         else {
             buttonValue = 40;
         }
-        setTime(buttonValue);
+        setBreakTime(buttonValue);
     };
 
 
@@ -45,7 +54,7 @@ const Home = () => {
 
                 {<div className='grid grid-cols-3 gap-5 ml-32 mr-20'>
                     {
-                        players.map(player => <Player player={player} key={player._id}></Player>)
+                        players.map(player => <Player player={player} key={player._id} handlePlayer={handlePlayer}></Player>)
                     }
                 </div>}
             </div>
@@ -57,7 +66,7 @@ const Home = () => {
             <div className='m-5'>
                 <Mydetails></Mydetails>
                 <Break handleBreakTime={handleBreakTime}></Break>
-                <Exercise time={time}></Exercise>
+                <Exercise breakTime={breakTime} practiceTimes={practiceTimes}></Exercise>
             </div>
         </div>
 
