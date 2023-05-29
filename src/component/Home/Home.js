@@ -5,6 +5,7 @@ import Player from '../Player/Player';
 import Mydetails from '../Mydetails/Mydetails';
 import Break from '../Break/Break';
 import Exercise from '../Exercise/Exercise';
+import { addToDb, getTime } from '../utilities/addToDb';
 const Home = () => {
     const [players, setPlayers] = useState([]);
     const [breakTime, setBreakTime] = useState(0);
@@ -16,11 +17,17 @@ const Home = () => {
 
     }, []);
 
+
+    useEffect(() => {
+        const getTimes = getTime();
+        setBreakTime(getTimes.value);
+    }, [breakTime]);
+
+
     const handlePlayer = ({ time }) => {
         setPracticeTimes(time + practiceTimes);
 
     };
-    console.log(practiceTimes);
 
 
 
@@ -40,6 +47,7 @@ const Home = () => {
             buttonValue = 40;
         }
         setBreakTime(buttonValue);
+        addToDb(buttonValue);
     };
 
 
