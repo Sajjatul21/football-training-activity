@@ -14,14 +14,17 @@ const getTime = () => {
         return storeTime;
     }
     else {
-        
+
         getTime = 0;
         return getTime;
     }
+};
 
-
+const deleteDb = () => {
+    localStorage.removeItem("practice-time");
 };
 export {
     addToDb,
-    getTime
+    getTime,
+    deleteDb
 };

@@ -17,7 +17,6 @@ const Home = () => {
 
     }, []);
 
-
     useEffect(() => {
         const getTimes = getTime();
         setBreakTime(getTimes.value);
