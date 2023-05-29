@@ -20,7 +20,7 @@ const Home = () => {
     useEffect(() => {
         const getTimes = getTime();
         setBreakTime(getTimes.value);
-    }, [breakTime]);
+    }, []);
 
 
     const handlePlayer = ({ time }) => {
